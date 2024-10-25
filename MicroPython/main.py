@@ -2,7 +2,7 @@
 Created by: Elliott Roach
 Created on: oct 2024
 This module is a Micro:bit MicroPython program
-dose liht up all combonation of RGB light
+does light up all combination of RGB light
 """
 
 from microbit import *
