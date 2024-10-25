@@ -1,10 +1,78 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
+Created by: Elliott Roach
+Created on: oct 2024
 This module is a Micro:bit MicroPython program
+dose liht up all combonation of RGB light
 """
 
 from microbit import *
 
 
-display.scroll("Hello, World!")
+display.clear()
+pin14.write_digital(0)
+pin15.write_digital(0)
+pin16.write_digital(0)
+Image.HAPPY
+
+while True:
+    if button_a.is_pressed():
+        """blue"""
+        pin13.write_digital(1)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        """green"""
+        pin13.write_digital(0)
+        pin14.write_digital(1)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        """red"""
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(1)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        """light blue"""
+        pin13.write_digital(1)
+        pin14.write_digital(1)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(1)
+        pin14.write_digital(0)
+        pin15.write_digital(1)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(1)
+        pin15.write_digital(1)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
+        pin13.write_digital(1)
+        pin14.write_digital(1)
+        pin15.write_digital(1)
+        sleep(1000)
+        pin13.write_digital(0)
+        pin14.write_digital(0)
+        pin15.write_digital(0)
+        sleep(1000)
