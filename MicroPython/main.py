@@ -7,13 +7,14 @@ dose liht up all combonation of RGB light
 
 from microbit import *
 
-
+"""cleaning"""
 display.clear()
 pin14.write_digital(0)
 pin15.write_digital(0)
 pin16.write_digital(0)
 Image.HAPPY
 
+"""all RGB colers"""
 while True:
     if button_a.is_pressed():
         """blue"""
@@ -52,6 +53,7 @@ while True:
         pin14.write_digital(0)
         pin15.write_digital(0)
         sleep(1000)
+        """purple"""
         pin13.write_digital(1)
         pin14.write_digital(0)
         pin15.write_digital(1)
@@ -60,6 +62,7 @@ while True:
         pin14.write_digital(0)
         pin15.write_digital(0)
         sleep(1000)
+        """dark green"""
         pin13.write_digital(0)
         pin14.write_digital(1)
         pin15.write_digital(1)
@@ -68,6 +71,7 @@ while True:
         pin14.write_digital(0)
         pin15.write_digital(0)
         sleep(1000)
+        """white"""
         pin13.write_digital(1)
         pin14.write_digital(1)
         pin15.write_digital(1)
